@@ -5,8 +5,8 @@ from .models import *
 
 
 def index(request):
-    ln = LatestNews.objects.all()
+    hp = Hospitals.objects.all()
     context = {
-        "qwe": ln
+        "Hospital": hp
     }
     return render(request, template_name='Hospital_2/index.html', context=context)
