@@ -1,0 +1,96 @@
+{% extends 'Hospital_2/base.html' %}
+
+{% block content %}
+
+<div class="container" id="about">
+    <div class="row " style="margin-top: 135px;">
+
+        <div class="col-md-3">
+            <div class="card m-2" style="">
+                <div class="card-header">
+                    ФИО Главного Врача: {{ headofdoctors_info.full_name }}
+                </div>
+                <br>
+
+                <div class="card-header">
+
+                    ФИО Лечащего врача: {{ doc.full_name }}
+
+                </div>
+                 {% for doc in doctor_info %}
+                <li class="list-group-item">Специальность: {{doc.type_doctor_dic}}</li>
+                <li class="list-group-item">Опыт работы: {{doc.experience}}</li>
+                {% endfor %}
+                {% for nure in nure_info %}
+                <li class="list-group-item">Заместитель: {{ nure.full_name }}</li>
+                <li class="list-group-item">Номер телефона: {{ nure.phone_number }}</li>
+                {% endfor %}
+                <li class="list-group-item">Пациентов в очереди: Количество всех пациентов связанных с врачом</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-3">
+            <div class="card m-2" style="">
+                <div class="card-header">
+                    ФИО Главного Врача: {{ headofdoctors_info.full_name }}
+                </div>
+                <br>
+                <div class="card-header">
+                    ФИО Лечащего врача: {{ doctor_info.full_name }}
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Специальность: {{doctor_info.type_doctor_dic}}</li>
+                    <li class="list-group-item">Опыт работы: {{doctor_info}}</li>
+                    <li class="list-group-item">Заместитель: {{ nure_info.full_name }}</li>
+                    <li class="list-group-item">Номер телефона: {{ nure_info.phone_number }}</li>
+                    <li class="list-group-item">Пациентов в очереди: Количество всех пациентов связанных с врачом</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card m-2" style="">
+                <div class="card-header">
+                    ФИО Главного Врача: {{ headofdoctors_info.full_name }}
+                </div>
+                <br>
+                <div class="card-header">
+                    ФИО Лечащего врача: {{ doctor_info.full_name }}
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Специальность: {{doctor_info.type_doctor_dic}}</li>
+                    <li class="list-group-item">Опыт работы: {{doctor_info}}</li>
+                    <li class="list-group-item">Заместитель: {{ nure_info.full_name }}</li>
+                    <li class="list-group-item">Номер телефона: {{ nure_info.phone_number }}</li>
+                    <li class="list-group-item">Пациентов в очереди: Количество всех пациентов связанных с врачом</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card m-2" style="">
+                <div class="card-header">
+                    ФИО Главного Врача: {{ headofdoctors_info.full_name }}
+                </div>
+                <br>
+                <div class="card-header">
+                    ФИО Лечащего врача: {{ doctor_info.full_name }}
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Специальность: {{doctor_info.type_doctor_dic}}</li>
+                    <li class="list-group-item">Опыт работы: {{doctor_info}}</li>
+                    <li class="list-group-item">Заместитель: {{ nure_info.full_name }}</li>
+                    <li class="list-group-item">Номер телефона: {{ nure_info.phone_number }}</li>
+                    <li class="list-group-item">Пациентов в очереди: Количество всех пациентов связанных с врачом</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}
